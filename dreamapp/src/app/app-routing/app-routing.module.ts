@@ -6,6 +6,7 @@ import { HelloWorldComponent } from '../hello-world/hello-world.component';
 import { UsersComponent } from '../users/users.component';
 import { NameAgeComponent} from '../name-age/name-age.component'
 import { PostsComponent } from '../posts/posts.component';
+import { VideosComponent } from '../videos/videos.component';
 
 export const routes: Routes = [
   //Angular1
@@ -16,6 +17,7 @@ export const routes: Routes = [
   //Angular2
   { path: 'name-age-form', component: NameAgeComponent},
   { path: 'app-posts', component: PostsComponent},
+  { path: 'videos', component: VideosComponent },
 ];
 
 export default provideRouter(routes);
