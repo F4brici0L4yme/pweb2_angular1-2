@@ -16,6 +16,7 @@ button {
     color: white;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -30,4 +31,16 @@ ul {
 
 li {
     margin: 5px 0;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form {
+    margin: 20px 0;
 }

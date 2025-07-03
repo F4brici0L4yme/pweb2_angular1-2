@@ -24,4 +24,10 @@ export class PersonaComponent {
     this.mostrar = !this.mostrar;
   }
 
+  newHobbie(hobbie: any) {
+    if (hobbie.value.trim() !== '') {
+      this.hobbies.push(hobbie.value.trim());
+      hobbie.value = '';
+    }
+  }
 }
