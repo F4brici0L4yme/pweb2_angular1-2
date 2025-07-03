@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Lista de Usuarios</h1>
+
+    <form (ngSubmit)="addUser()">
+        <input type="text" [(ngModel)]="newUser" name="newUser" placeholder="Nuevo usuario" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <ul>
+        <li *ngFor="let user of users; let i = index">
+            {{ user }}
+            <button (click)="greet(user)">Saludar</button>
+            <button (click)="deleteUser(i)">Eliminar</button>
+        </li>
+    </ul>
+
+    <p *ngIf="greeting">{{ greeting }}</p>
+</div>

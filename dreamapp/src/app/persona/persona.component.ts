@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HelloWorldComponent } from '../hello-world/hello-world.component';
 
 @Component({
   selector: 'app-persona',
-  imports: [CommonModule],
+  imports: [CommonModule, HelloWorldComponent],
   templateUrl: './persona.component.html',
   styleUrl: './persona.component.css'
 })
