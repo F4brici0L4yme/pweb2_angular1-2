@@ -1,0 +1,20 @@
+<div class="cart-container">
+    <h1>🛒 Carrito de Compras</h1>
+
+    <ul>
+        <li *ngFor="let item of items">
+            <input type="checkbox" [checked]="item.checked" (change)="toggleItem(item.name)">
+            <span [style.text-decoration]="item.checked ? 'line-through' : 'none'">{{ item.name }}</span>
+            S/.{{ item.price.toFixed(2) }} x {{ item.quantity }}
+            <span [style.color]="item.checked ? 'gray' : 'green'">
+                S/.{{ (item.price * item.quantity).toFixed(2) }}
+            </span>
+            <button (click)="removeItem(item.name)">Eliminar</button>
+        </li>
+    </ul>
+
+    <div class="total">
+        <strong>Total a pagar:</strong>
+        <h2>S/.{{ total.toFixed(2) }}</h2>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div style="display: flex; align-items: center;">
+    <input type="checkbox" [checked]="item.checked" (change)="toggle()">
+    <span [style.text-decoration]="item.checked ? 'line-through' : 'none'">{{ item.name }}</span>
+    <span style="margin-left: auto;">
+        S/.{{ item.price.toFixed(2) }} x {{ item.quantity }}
+        <span [style.color]="item.checked ? 'gray' : 'green'">
+            S/.{{ total.toFixed(2) }}
+        </span>
+        <button (click)="remove()">Eliminar</button>
+    </span>
+</div>
