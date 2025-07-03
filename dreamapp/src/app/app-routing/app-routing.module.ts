@@ -7,6 +7,7 @@ import { UsersComponent } from '../users/users.component';
 import { NameAgeComponent} from '../name-age/name-age.component'
 import { PostsComponent } from '../posts/posts.component';
 import { VideosComponent } from '../videos/videos.component';
+import { ShoppingCartComponent } from '../shopping-cart/shopping-cart.component';
 
 export const routes: Routes = [
   //Angular1
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'name-age-form', component: NameAgeComponent},
   { path: 'app-posts', component: PostsComponent},
   { path: 'videos', component: VideosComponent },
+  { path: 'app-shopping-cart', component: ShoppingCartComponent },
 ];
 
 export default provideRouter(routes);
