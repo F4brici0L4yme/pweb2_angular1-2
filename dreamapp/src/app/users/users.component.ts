@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './users.component.css'
 })
 export class UsersComponent {
-  users: string[] = ['Juan', 'María', 'Pedro'];
+  users: string[] = ['Juan Mecanico', 'Yhon', 'Pedro Pedro Pedro'];
   newUser: string = '';
   greeting: string = '';
 
