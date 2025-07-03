@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>{{ nombre }}</h1>
+    <p>{{ correo }}</p>
+
+    <button (click)="showHobbies()">
+        {{ mostrar ? 'Ocultar hobbies' : 'Mostrar hobbies' }}
+    </button>
+
+    <ul *ngIf="mostrar">
+        <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
+    </ul>
+</div>
